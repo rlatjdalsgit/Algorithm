@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main_15649 {
+public class Main_15651 {
     static int n;
     static int m;
     static  boolean[] visit;
@@ -33,12 +33,14 @@ public class Main_15649 {
             return;
         }
         for(int i=0;i<n;i++){
-            if(!visit[i]){
-                visit[i]=true;
+//            if(!visit[i]){
+//                visit[i]=true;
                 arr[depth]=i+1;
                 dfs(depth+1);
-                visit[i]=false;
-            }
+//                visit[i]=false;
+//            }
+
         }
+
     }
 }
